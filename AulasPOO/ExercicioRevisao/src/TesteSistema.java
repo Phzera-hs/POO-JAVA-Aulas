@@ -18,10 +18,13 @@ public class TesteSistema {
 
         var cliente1 = new Cliente("João", "111.111.111-11");
         var cliente2 = new Cliente("Maria", "111.111.111-11");
+        System.out.println("Pedidos do João");
         cliente1.adicionarPedido(pedido1);
         cliente1.adicionarPedido(pedido2);
         cliente1.relatorio();
 
+
+        System.out.println("Pedios da Maria");
         cliente2.adicionarPedido(pedido2);
         cliente2.relatorio();
         }
