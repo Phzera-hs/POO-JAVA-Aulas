@@ -1,11 +1,19 @@
 public class Pedido {
-    Produto[] produtos = new Produto[10];
+    private Produto[] itens;
 
     public Produto[] getProdutos() {
-        return produtos;
+        return itens;
     }
 
-    public void setProdutos(Produto[] produtos) {
-        this.produtos = produtos;
+    public void SetItens(Produto[] produtos) {
+        this.itens = produtos;
+    }
+
+    public double calcularValorTotal(){
+        double valor = 0.0;
+        for (Produto produtos : itens) {
+            valor += produtos.getPreco();
+        }
+        return valor;
     }
 }

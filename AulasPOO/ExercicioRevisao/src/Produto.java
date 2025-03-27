@@ -4,6 +4,16 @@ public class Produto {
     private Double preco;
     private Integer quantidade;
 
+    public Produto(String name, Double preco, Integer quantidade) {
+        this.name = name;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
+
+    public Produto(String name, Double preco){
+        this(name, preco, 0);
+    }
+
 
     //*gets */
     public String getName() {
